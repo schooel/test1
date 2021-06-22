@@ -1,5 +1,5 @@
 // Echo Client - send a message to an Echo Server and wait for the reply
-// 
+//
 // java  -jar MyEchoClient.jar  <ServerIP>  <ListenerPort>
 //
 //      where:  ServerIP         is the IP address of the EchoServer
@@ -13,9 +13,9 @@ public class MyEchoClient {
 
     public static void main(String[] args) throws IOException {
 
-	    String version = new String( "MyEchoClient - Version 1.0.0" );
-	
-        int myPort = 10080;
+	    String version = new String( "MyEchoClient - Version 1.1.0" );
+
+        int myPort = 1080;
         String serverHostname = new String("127.0.0.1");
 
         if (args.length != 2) {
@@ -29,7 +29,7 @@ public class MyEchoClient {
             myPort = Integer.parseInt(args[1]);
             serverHostname = args[0];
         }
-        
+
         System.out.println("Attemping to connect to host " + serverHostname + " on port " + myPort );
 
         Socket echoSocket = null;
